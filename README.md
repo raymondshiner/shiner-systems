@@ -1,10 +1,38 @@
 # Shiner Systems
 
-This is a clean repository ready for new development.
+A Next.js application for Shiner Systems, an independent software consulting company run by Raymond Shiner.
 
 ## Getting Started
 
-This repository has been stripped clean and is ready for your next project.
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Features
+
+- Modern Next.js 14 with App Router
+- TypeScript support
+- Responsive design
+- Under construction page with animated logo
+- Clean, professional styling
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- TypeScript
+- CSS Modules
+- Google Fonts (Inter)
 
 ## License
 
