@@ -34,7 +34,7 @@ export default function Home() {
       <p className="description">
         Welcome to Shiner Systems, an independent software consulting company 
         founded and operated by Raymond Shiner. I deliver innovative software 
-         solutions tailored to meet the unique needs of my clients. Minor deployment test change.
+         
       </p>
     </main>
   )
