@@ -34,9 +34,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - CSS Modules
 - Google Fonts (Inter)
 
-## Deployment and Branching
+## Environments
 
-- **prod-vercel-target**: This branch exists solely for Vercel benign targeting. It is not automatically updated. Changes from `main` will be manually promoted to `shinersystems.com` via Vercel. Do not use this branch for ongoing development.
+- **develop**: [shinersystems.vercel.app](https://shinersystems.vercel.app) — latest developer deployment. You can visit this to see the developer version of the site under active construction.
+- **main**: [www.shinersystems.com](https://www.shinersystems.com) — production deployment.
 
 ## License
 
