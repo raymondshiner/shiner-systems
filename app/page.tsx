@@ -31,7 +31,7 @@ export default function Home() {
         <div className="construction-icon">🚧</div>
       </div>
       
-      <div className="under-construction">Under Construction</div>
+      <div className="under-construction">Under Construction!</div>
 
       <p className="description">
         Welcome to Shiner Systems, an independent software consulting company 
