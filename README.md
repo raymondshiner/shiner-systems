@@ -34,6 +34,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - CSS Modules
 - Google Fonts (Inter)
 
+## Environments
+
+- **develop**: [shinersystems.vercel.app](https://shinersystems.vercel.app) — latest developer deployment. You can visit this to see the developer version of the site under active construction.
+- **main**: [www.shinersystems.com](https://www.shinersystems.com) — production deployment.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
