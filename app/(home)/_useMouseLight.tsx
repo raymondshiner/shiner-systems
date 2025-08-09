@@ -10,6 +10,7 @@ type Point = { x: number; y: number };
  */
 export function MouseLight() {
     const [pos, setPos] = useState<Point>({ x: 0, y: 0 });
+    const SIZE = 140; // keep in sync with .mouse-light width/height
 
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -21,7 +22,7 @@ export function MouseLight() {
     return (
         <div
             className="mouse-light"
-            style={{ left: pos.x - 100, top: pos.y - 100 }}
+            style={{ left: pos.x - SIZE / 2, top: pos.y - SIZE / 2 }}
         />
     );
 }

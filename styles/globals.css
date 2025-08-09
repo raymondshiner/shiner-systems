@@ -21,6 +21,72 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Top bar navigation */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 200;
+}
+
+.top-bar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-nav a {
+    position: relative;
+    padding: 0.25rem 0;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.primary-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #007bff, #66ccff);
+    transition: width 0.25s ease;
+}
+
+.primary-nav a:hover::after,
+.primary-nav a:focus-visible::after {
+    width: 100%;
+}
+
+.primary-nav a:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -105,19 +171,20 @@ a {
 /* Mouse light bloom effect */
 .mouse-light {
     position: fixed;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     background: radial-gradient(
         circle,
-        rgba(0, 123, 255, 0.3) 0%,
-        rgba(0, 123, 255, 0.1) 50%,
+        rgba(0, 123, 255, 0.18) 0%,
+        rgba(0, 123, 255, 0.05) 45%,
         transparent 70%
     );
     border-radius: 50%;
     pointer-events: none;
     z-index: 1000;
-    transition: all 0.1s ease;
+    transition: transform 0.12s ease, opacity 0.3s ease;
     mix-blend-mode: screen;
+    opacity: 0.85; /* slightly dimmer */
 }
 
 /* Bordered banner with white text */
