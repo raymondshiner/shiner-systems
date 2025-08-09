@@ -1,32 +1,32 @@
 {
-  "name": "shiner-systems",
-  "version": "1.0.0",
-  "description": "Shiner Systems - Independent Software Consulting",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^6.6.4",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^30.0.5",
-    "jest-environment-jsdom": "^30.0.5",
-    "typescript": "^5.0.0"
-  }
+    "name": "shiner-systems",
+    "version": "1.0.0",
+    "description": "Shiner Systems - Independent Software Consulting",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "next": "^14.0.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^6.6.4",
+        "@testing-library/react": "^16.3.0",
+        "@testing-library/user-event": "^14.6.1",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^20.0.0",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^30.0.5",
+        "jest-environment-jsdom": "^30.0.5",
+        "typescript": "^5.0.0"
+    }
 }
