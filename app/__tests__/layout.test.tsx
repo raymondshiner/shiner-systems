@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
-import Layout from "../(layout)/layout";
+import { MainLayout } from "../layout";
 
 beforeEach(() => {
     render(
-        <Layout>
+        <MainLayout>
             <div />
-        </Layout>
+        </MainLayout>
     );
 });
 

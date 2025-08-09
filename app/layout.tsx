@@ -1,12 +1,19 @@
-import { NavBar } from "@/app/(layout)/NavBar";
+import { PropsWithChildren } from "react";
 import "styles/globals.css";
-import { MouseLight } from "./MouseLight";
+import { MouseLight } from "./_components/MouseLight";
+import { NavBar } from "./_components/NavBar";
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
+    return (
+        <html>
+            <body>
+                <MainLayout>{children}</MainLayout>
+            </body>
+        </html>
+    );
+}
+
+export const MainLayout = ({ children }: PropsWithChildren) => {
     return (
         <>
             <MouseLight />
@@ -21,4 +28,4 @@ export default function RootLayout({
             {children}
         </>
     );
-}
+};
