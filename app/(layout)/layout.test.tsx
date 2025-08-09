@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Layout from "../layout";
+import Layout from "../(layout)/layout";
 
 beforeEach(() => {
     render(
@@ -7,6 +7,10 @@ beforeEach(() => {
             <div />
         </Layout>
     );
+});
+
+test("renders a link to home page", () => {
+    screen.getByRole("link", { name: /home/i });
 });
 
 test("renders links to other pages", () => {

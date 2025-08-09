@@ -14,7 +14,8 @@ export function MouseLight() {
 
     useEffect(() => {
         if (typeof window === "undefined") return;
-        const handle = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
+        const handle = (e: MouseEvent) =>
+            setPos({ x: e.clientX, y: e.clientY });
         window.addEventListener("mousemove", handle);
         return () => window.removeEventListener("mousemove", handle);
     }, []);
@@ -34,7 +35,8 @@ export function useMouseLightPosition() {
     const [pos, setPos] = useState<Point>({ x: 0, y: 0 });
     useEffect(() => {
         if (typeof window === "undefined") return;
-        const handle = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
+        const handle = (e: MouseEvent) =>
+            setPos({ x: e.clientX, y: e.clientY });
         window.addEventListener("mousemove", handle);
         return () => window.removeEventListener("mousemove", handle);
     }, []);
