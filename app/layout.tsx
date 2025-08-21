@@ -1,7 +1,6 @@
 import { PropsWithChildren } from "react";
 import "styles/globals.css";
-import { MouseLight } from "./_components/MouseLight";
-import { NavBar } from "./_components/NavBar";
+import { MouseLight, NavBar } from "./_components";
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
