@@ -5,13 +5,13 @@ export function NavBar() {
     <nav aria-label="Primary" className="primary-nav">
       <ul>
         <li>
-          <a href="#services">Services</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="#resume">Resume</a>
         </li>
         <li>
-          <a href="/resume">Resume</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>

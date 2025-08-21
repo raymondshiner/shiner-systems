@@ -3,141 +3,247 @@
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <main className="hero-container">
+      {/* Home/About Section */}
+      <main id="home" className="hero-container">
         <div className="hero-content">
-          <h1 className="title">Shiner Systems</h1>
-          <p className="subtitle">Independent Software Consulting</p>
+          <h1 className="title">Raymond Shiner</h1>
+          <p className="subtitle">Independent Software Developer & Consultant</p>
           <p className="description">
-            Delivering innovative software solutions with expertise in modern web technologies,
-            cloud architecture, and full-stack development. Transform your ideas into robust,
+            I deliver innovative software solutions with expertise in modern web technologies,
+            cloud architecture, and full-stack development. Let me transform your ideas into robust,
             scalable applications.
           </p>
+          <div className="about-highlights">
+            <div className="highlight">
+              <span className="highlight-number">5+</span>
+              <span className="highlight-text">Years Experience</span>
+            </div>
+            <div className="highlight">
+              <span className="highlight-number">50+</span>
+              <span className="highlight-text">Projects Completed</span>
+            </div>
+            <div className="highlight">
+              <span className="highlight-number">100%</span>
+              <span className="highlight-text">Client Satisfaction</span>
+            </div>
+          </div>
           <div className="cta-buttons">
-            <a href="#services" className="cta-primary">Our Services</a>
-            <a href="#contact" className="cta-secondary">Get in Touch</a>
+            <a href="#resume" className="cta-primary">View Resume</a>
+            <a href="#contact" className="cta-secondary">Hire Me</a>
           </div>
         </div>
       </main>
 
-      {/* Services Section */}
-      <section id="services" className="section services-section">
+      {/* Resume Section */}
+      <section id="resume" className="section resume-section">
         <div className="section-container">
-          <h2 className="section-title">Our Services</h2>
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">🚀</div>
-              <h3>Full-Stack Development</h3>
-              <p>End-to-end web application development using modern frameworks like React, Next.js, and Node.js. From concept to deployment.</p>
+          <h2 className="section-title">Resume</h2>
+          <div className="resume-content">
+
+            {/* Skills */}
+            <div className="resume-block">
+              <h3 className="resume-heading">Technical Skills</h3>
+              <div className="skills-grid">
+                <div className="skill-category">
+                  <h4>Frontend</h4>
+                  <div className="skill-list">
+                    <span className="skill-tag">React</span>
+                    <span className="skill-tag">Next.js</span>
+                    <span className="skill-tag">TypeScript</span>
+                    <span className="skill-tag">Vue.js</span>
+                    <span className="skill-tag">Tailwind CSS</span>
+                    <span className="skill-tag">JavaScript</span>
+                  </div>
+                </div>
+                <div className="skill-category">
+                  <h4>Backend</h4>
+                  <div className="skill-list">
+                    <span className="skill-tag">Node.js</span>
+                    <span className="skill-tag">Python</span>
+                    <span className="skill-tag">Express</span>
+                    <span className="skill-tag">FastAPI</span>
+                    <span className="skill-tag">GraphQL</span>
+                    <span className="skill-tag">REST APIs</span>
+                  </div>
+                </div>
+                <div className="skill-category">
+                  <h4>Database & Cloud</h4>
+                  <div className="skill-list">
+                    <span className="skill-tag">PostgreSQL</span>
+                    <span className="skill-tag">MongoDB</span>
+                    <span className="skill-tag">AWS</span>
+                    <span className="skill-tag">Vercel</span>
+                    <span className="skill-tag">Docker</span>
+                    <span className="skill-tag">Redis</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="service-card">
-              <div className="service-icon">☁️</div>
-              <h3>Cloud Solutions</h3>
-              <p>Scalable cloud architecture design and implementation using AWS, Azure, and Google Cloud Platform for optimal performance.</p>
+
+            {/* Experience */}
+            <div className="resume-block">
+              <h3 className="resume-heading">Experience</h3>
+              <div className="experience-list">
+                <div className="experience-item">
+                  <div className="experience-header">
+                    <h4>Independent Software Consultant</h4>
+                    <span className="experience-period">2019 - Present</span>
+                  </div>
+                  <p className="experience-company">Shiner Systems</p>
+                  <ul className="experience-details">
+                    <li>Deliver end-to-end web applications for clients across various industries</li>
+                    <li>Provide technical consulting and architecture guidance for scaling applications</li>
+                    <li>Implement modern DevOps practices and CI/CD pipelines</li>
+                    <li>Mentor development teams and conduct code reviews</li>
+                  </ul>
+                </div>
+                <div className="experience-item">
+                  <div className="experience-header">
+                    <h4>Senior Full Stack Developer</h4>
+                    <span className="experience-period">2017 - 2019</span>
+                  </div>
+                  <p className="experience-company">Tech Solutions Inc.</p>
+                  <ul className="experience-details">
+                    <li>Built scalable web applications using React, Node.js, and AWS</li>
+                    <li>Led a team of 5 developers on multiple client projects</li>
+                    <li>Improved application performance by 40% through optimization techniques</li>
+                    <li>Designed and implemented microservices architecture</li>
+                  </ul>
+                </div>
+                <div className="experience-item">
+                  <div className="experience-header">
+                    <h4>Software Developer</h4>
+                    <span className="experience-period">2015 - 2017</span>
+                  </div>
+                  <p className="experience-company">StartupXYZ</p>
+                  <ul className="experience-details">
+                    <li>Developed responsive web applications using modern JavaScript frameworks</li>
+                    <li>Collaborated with design teams to implement pixel-perfect UIs</li>
+                    <li>Integrated third-party APIs and payment processing systems</li>
+                    <li>Participated in agile development processes and sprint planning</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="service-card">
-              <div className="service-icon">📱</div>
-              <h3>Mobile Development</h3>
-              <p>Cross-platform mobile applications using React Native and modern development practices for iOS and Android.</p>
+
+            {/* Education */}
+            <div className="resume-block">
+              <h3 className="resume-heading">Education</h3>
+              <div className="education-list">
+                <div className="education-item">
+                  <div className="education-header">
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <span className="education-period">2011 - 2015</span>
+                  </div>
+                  <p className="education-school">University of Technology</p>
+                  <p className="education-details">Graduated Summa Cum Laude • GPA: 3.9/4.0</p>
+                </div>
+              </div>
             </div>
-            <div className="service-card">
-              <div className="service-icon">🔧</div>
-              <h3>Technical Consulting</h3>
-              <p>Strategic technology guidance, code reviews, architecture planning, and development team mentoring.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🔄</div>
-              <h3>DevOps & CI/CD</h3>
-              <p>Automated deployment pipelines, containerization with Docker, and infrastructure as code solutions.</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">⚡</div>
-              <h3>Performance Optimization</h3>
-              <p>Application performance tuning, database optimization, and scalability improvements for existing systems.</p>
+
+            {/* Certifications */}
+            <div className="resume-block">
+              <h3 className="resume-heading">Certifications</h3>
+              <div className="certifications-list">
+                <div className="certification-item">
+                  <h4>AWS Certified Solutions Architect</h4>
+                  <span className="certification-year">2022</span>
+                </div>
+                <div className="certification-item">
+                  <h4>Google Cloud Professional Developer</h4>
+                  <span className="certification-year">2021</span>
+                </div>
+                <div className="certification-item">
+                  <h4>MongoDB Certified Developer</h4>
+                  <span className="certification-year">2020</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Tech Stack Section */}
-      <section className="section tech-section">
+      {/* Projects Section */}
+      <section id="projects" className="section projects-section">
         <div className="section-container">
-          <h2 className="section-title">Technology Expertise</h2>
-          <div className="tech-categories">
-            <div className="tech-category">
-              <h3>Frontend</h3>
-              <div className="tech-list">
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">Next.js</span>
-                <span className="tech-tag">TypeScript</span>
-                <span className="tech-tag">Vue.js</span>
-                <span className="tech-tag">Tailwind CSS</span>
+          <h2 className="section-title">Featured Projects</h2>
+          <div className="projects-grid">
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">🚀</div>
+              </div>
+              <div className="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack e-commerce solution built with Next.js, Stripe payments, and PostgreSQL. Features include inventory management, order tracking, and admin dashboard.</p>
+                <div className="project-tech">
+                  <span className="tech-tag">Next.js</span>
+                  <span className="tech-tag">TypeScript</span>
+                  <span className="tech-tag">PostgreSQL</span>
+                  <span className="tech-tag">Stripe</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">GitHub</a>
+                </div>
               </div>
             </div>
-            <div className="tech-category">
-              <h3>Backend</h3>
-              <div className="tech-list">
-                <span className="tech-tag">Node.js</span>
-                <span className="tech-tag">Python</span>
-                <span className="tech-tag">Express</span>
-                <span className="tech-tag">FastAPI</span>
-                <span className="tech-tag">GraphQL</span>
-              </div>
-            </div>
-            <div className="tech-category">
-              <h3>Database</h3>
-              <div className="tech-list">
-                <span className="tech-tag">PostgreSQL</span>
-                <span className="tech-tag">MongoDB</span>
-                <span className="tech-tag">Redis</span>
-                <span className="tech-tag">Prisma</span>
-                <span className="tech-tag">Supabase</span>
-              </div>
-            </div>
-            <div className="tech-category">
-              <h3>Cloud & DevOps</h3>
-              <div className="tech-list">
-                <span className="tech-tag">AWS</span>
-                <span className="tech-tag">Vercel</span>
-                <span className="tech-tag">Docker</span>
-                <span className="tech-tag">GitHub Actions</span>
-                <span className="tech-tag">Terraform</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* About Section */}
-      <section className="section about-section">
-        <div className="section-container">
-          <h2 className="section-title">About Shiner Systems</h2>
-          <div className="about-content">
-            <div className="about-text">
-              <p>
-                Founded by Raymond Shiner, Shiner Systems is an independent software consulting
-                firm dedicated to delivering high-quality, innovative solutions for businesses
-                of all sizes. With years of experience in software development and system
-                architecture, we specialize in modern web technologies and cloud-native solutions.
-              </p>
-              <p>
-                Our approach combines technical excellence with practical business insights,
-                ensuring that every project not only meets technical requirements but also
-                drives real business value. We work closely with our clients to understand
-                their unique challenges and deliver tailored solutions that scale with their growth.
-              </p>
-              <div className="highlights">
-                <div className="highlight">
-                  <span className="highlight-number">5+</span>
-                  <span className="highlight-text">Years Experience</span>
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">📱</div>
+              </div>
+              <div className="project-content">
+                <h3>Task Management App</h3>
+                <p>A collaborative task management application with real-time updates, built using React, Node.js, and Socket.io. Supports teams, projects, and deadline tracking.</p>
+                <div className="project-tech">
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">Socket.io</span>
+                  <span className="tech-tag">MongoDB</span>
                 </div>
-                <div className="highlight">
-                  <span className="highlight-number">50+</span>
-                  <span className="highlight-text">Projects Completed</span>
+                <div className="project-links">
+                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">GitHub</a>
                 </div>
-                <div className="highlight">
-                  <span className="highlight-number">100%</span>
-                  <span className="highlight-text">Client Satisfaction</span>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">☁️</div>
+              </div>
+              <div className="project-content">
+                <h3>Cloud Analytics Dashboard</h3>
+                <p>A real-time analytics dashboard for monitoring cloud infrastructure and application metrics. Built with Vue.js frontend and Python FastAPI backend.</p>
+                <div className="project-tech">
+                  <span className="tech-tag">Vue.js</span>
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">FastAPI</span>
+                  <span className="tech-tag">AWS</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-image">
+                <div className="project-placeholder">🔧</div>
+              </div>
+              <div className="project-content">
+                <h3>DevOps Automation Suite</h3>
+                <p>A comprehensive DevOps toolkit for automated deployments, monitoring, and infrastructure management using Docker, Kubernetes, and Terraform.</p>
+                <div className="project-tech">
+                  <span className="tech-tag">Docker</span>
+                  <span className="tech-tag">Kubernetes</span>
+                  <span className="tech-tag">Terraform</span>
+                  <span className="tech-tag">GitHub Actions</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="project-link">Documentation</a>
+                  <a href="#" className="project-link">GitHub</a>
                 </div>
               </div>
             </div>
@@ -154,8 +260,8 @@ export default function Home() {
               <h3>Ready to Start Your Project?</h3>
               <p>
                 Whether you need a complete application built from scratch, want to modernize
-                an existing system, or require technical consulting, we're here to help.
-                Let's discuss how we can bring your vision to life.
+                an existing system, or require technical consulting, I'm here to help.
+                Let's discuss how I can bring your vision to life.
               </p>
               <div className="contact-methods">
                 <div className="contact-method">
@@ -170,7 +276,7 @@ export default function Home() {
                   <div>
                     <h4>LinkedIn</h4>
                     <a href="https://linkedin.com/in/raymondshiner" target="_blank" rel="noopener noreferrer">
-                      Connect with Raymond Shiner
+                      Connect with me on LinkedIn
                     </a>
                   </div>
                 </div>
@@ -179,7 +285,7 @@ export default function Home() {
                   <div>
                     <h4>GitHub</h4>
                     <a href="https://github.com/raymondshiner" target="_blank" rel="noopener noreferrer">
-                      View Our Work
+                      View my work on GitHub
                     </a>
                   </div>
                 </div>
